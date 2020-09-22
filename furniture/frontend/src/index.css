@@ -1,0 +1,134 @@
+body{
+	
+  background-color: rgb(231, 231, 240);
+  margin:0px;
+  height:100vh;
+  font:16px sans-serif;
+    
+  }
+  .grid-container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 1fr; 
+    grid-template-rows: 5rem 1fr 5rem;
+    height: 70%;
+  }
+  .header{
+    grid-area:header;
+    background-color:rgb(55, 41, 116);
+    color:whitesmoke;
+    display:flex;
+    justify-content:space-between;
+    align-items:centre;
+    padding: 5px;
+  }
+  
+  .type a{
+    color:#fff;
+    font-size:16px;
+    font-weight:bold;
+    text-decoration:none;
+  }
+  .header-link a{
+    color:#fcf5f5;
+    text-decoration:none;
+  }
+  .header-link a:hover{
+    color:orangered;
+  }
+  
+  
+   .main{
+    grid-area:main; 
+  }
+  .footer{
+    grid-area: footer;
+    background-color:rgb(55, 41, 116);
+    color:#fff;
+    display:flex;
+    justify-content: centre;
+    
+    align-items: centre;
+  }
+  .products{
+    display:flex;
+    justify-content:centre;
+    align-items:centre;
+    flex-wrap:wrap;
+    
+    
+  }
+  .products li{
+    flex: 0 1 34px;
+    margin:10px;
+    height:300px;
+    border-bottom: .10px  #c0c0c0 solid;
+    list-style: none;
+    padding: 0;
+  }
+  .product-image{
+    max-width:340px;
+    max-height: 340px;
+  }
+  .product{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    height:50%;
+    
+    
+  
+  }
+  .product-name{
+    font-size:20px;
+    font-weight: bold;
+    padding: 5px;
+  }.product-price{
+    font-size: 25px;
+    font-weight: bold;
+  }
+  a{
+    text-decoration:none;
+  }
+  a:hover{
+    color:orangered;
+  }
+  .type button{
+    font-size:30px;
+    padding:2px;
+    border:none;
+    columns: #000000;
+    cursor: pointer;
+  }
+  .sidebar{
+    position:fixed;
+    transform:translate(-300px);
+     width: 300px;
+     background-color: grey;
+     height:100px;
+  }
+  .sidebar.open{
+    transform:translatex(0);
+  }
+  .sidebar-close-button{
+    border-radius:50%;
+    border:10px black solid;
+    width:30px;
+    height: 30px;
+    padding:5px;
+    font-size: 20px;
+    padding-top: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    top:20px;
+  }
+    
+  
+    
+    
+  
+  
